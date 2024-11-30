@@ -10,4 +10,3 @@ export const signInSchema = z.object({
     .regex(/[0-9]/, { message: 'password_digits' })
     .regex(/[\W_]/, { message: 'password_symbol' }),
 })
-
