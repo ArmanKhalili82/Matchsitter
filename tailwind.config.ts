@@ -128,7 +128,6 @@ const config = {
         background: {
           300: 'hsl(var(--b-300))',
         },
-       
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -164,7 +163,7 @@ const config = {
       fontFamily: {
         roboto: ['var(--font-roboto)'],
       },
-      
+
       boxShadow: {
         soft: '0 0 25px',
         normal: '0px 4px 25px 0px',

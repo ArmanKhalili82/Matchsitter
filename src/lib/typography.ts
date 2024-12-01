@@ -36,7 +36,7 @@ const typographyPlugin: PluginCreator = ({ addUtilities }) =>
       '.typo-desk-input': { fontSize: '14px', fontWeight: '400', lineHeight: '1.5' },
       '.typo-mob-input': { fontSize: '14px', fontWeight: '400', lineHeight: '1.5' },
       '.typo-desk-caption': { fontSize: '12px', fontWeight: '400', lineHeight: '1.5' },
-      '.typo-mob-caption': { fontSize: '12px', fontWeight: '400', lineHeight: '1.5' }
+      '.typo-mob-caption': { fontSize: '12px', fontWeight: '400', lineHeight: '1.5' },
     },
   ])
 export default typographyPlugin
