@@ -39,7 +39,7 @@ const config = {
         'subscription-gradient': 'linear-gradient(180deg, #F8D31B 0%, #F8AA1B 100%)',
       },
       colors: {
-        border: 'hsl(var(--border))',
+        // border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
         foreground: 'hsl(var(--foreground))',
@@ -125,9 +125,24 @@ const config = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
-        background: {
-          300: 'hsl(var(--b-300))',
+        border: {
+          100: 'hsl(var(--border-100))',
+          200: 'hsl(var(--border-200))',
+          300: 'hsl(var(--border-300))',
         },
+        background: {
+          50: 'hsl(var(--background-50))',
+          100: 'hsl(var(--background-200))',
+          200: 'hsl(var(--background-300))',
+          300: 'hsl(var(--background-300))',
+          400: 'hsl(var(--background-300))',
+        },
+        textBody: {
+          50: 'hsl(var(--t-body-50))',
+          100: 'hsl(var(--t-body-100))',
+          200: 'hsl(var(--t-body-200))',
+          300: 'hsl(var(--t-body-300))',
+        }
       },
       borderRadius: {
         lg: 'var(--radius)',
