@@ -72,7 +72,7 @@
     --surface: 200, 20%, 98%;
 
     /* the b name will be modified later */
-    --border-100: 200, 26%, 95%;        
+    --border-100: 200, 26%, 95%;
     --border-200: 200, 15%, 91%;
     --border-300: 200, 7%, 83%;
 
@@ -129,8 +129,6 @@
 
     --radius: 0.5rem;
   }
-
-  
 }
 
 @layer base {

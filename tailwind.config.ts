@@ -142,7 +142,7 @@ const config = {
           100: 'hsl(var(--t-body-100))',
           200: 'hsl(var(--t-body-200))',
           300: 'hsl(var(--t-body-300))',
-        }
+        },
       },
       borderRadius: {
         lg: 'var(--radius)',

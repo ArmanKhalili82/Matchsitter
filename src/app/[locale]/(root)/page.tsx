@@ -1,6 +1,7 @@
 import Toggle from '@/components/common/Toggle'
 import ToggleExpanding from '@/components/common/ToggleExpanding'
 import { Button } from '@/components/ui/button'
+import Input from '@/components/ui/input'
 import React from 'react'
 
 const Page = () => {
@@ -17,7 +18,8 @@ const Page = () => {
         ghost
       </Button> */}
       {/* <Toggle /> */}
-      <ToggleExpanding />
+      {/* <ToggleExpanding /> */}
+      <Input />
     </div>
   )
 }
