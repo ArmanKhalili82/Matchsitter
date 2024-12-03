@@ -10,12 +10,24 @@ import { Label } from '@/components/ui/label'
 import { Switch } from '@/components/ui/switch'
 import RadioButton from '@/components/common/RadioButton'
 import PenButton from '@/components/common/PenButton'
+import PriceButton from '@/components/common/PriceButton'
+import LabelSkill from '@/components/common/LabelSkill'
+import Menu from '@/components/common/Menu'
+import PendingButtons from '@/components/common/PendingButtons'
+import HeartButton from '@/components/common/HeartButton'
+import SpinnerButton from '@/components/common/SpinnerButton'
 
 const Page = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-3">
+    <div className="flex min-h-screen flex-col items-center justify-center gap-3 bg-gray-200">
       Develop here
-      <RadioButton />
+      <SpinnerButton />
+      <Menu />
+      <HeartButton />
+      <PendingButtons />
+      <LabelSkill />
+      <PriceButton />
+      {/* <RadioButton />
       <PenButton />
       <Button variant="penButton" size="icon">
         <Pen />
@@ -38,9 +50,9 @@ const Page = () => {
       <Button>
         <Pen />
       </Button>
-      <Checkbox />
-      {/* <Toggle /> */}
-      {/* <ToggleExpanding /> */}
+      <Checkbox /> */}
+      <Toggle />
+      <ToggleExpanding />
       <RadioGroup>
         <div className="flex items-center space-x-2">
           <RadioGroupItem value="default" id="r1" />

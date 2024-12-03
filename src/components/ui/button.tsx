@@ -20,7 +20,7 @@ const buttonVariants = cva(['group relative flex w-auto items-center justify-cen
       ],
       ghost: ['bg-white text-primary', 'focus:bg-background-100', 'disabled:text-textBody-100'],
       textButton: ['text-primary focus:text-primary-300'],
-      penButton: ['bg-white p-1 text-icons-700 ring-1 ring-border-200 focus:bg-background-50'],
+      penButton: ['bg-white p-1 text-icons-700 ring-1 ring-border-200 focus:bg-background-100'],
     },
     size: {
       sm: 'h-10 rounded-md px-3 typo-mob-button-sm',
