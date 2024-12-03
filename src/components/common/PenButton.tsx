@@ -4,7 +4,7 @@ import React from 'react'
 const PenButton = () => {
   return (
     <div>
-      <button className="size-8 !rounded-100 bg-white text-icons-700 p-1 ring-1 ring-border-200 focus:bg-background-50">
+      <button className="size-8 !rounded-100 bg-white p-1 text-icons-700 ring-1 ring-border-200 focus:bg-background-50">
         <Pen />
       </button>
     </div>

@@ -17,7 +17,7 @@ const Page = () => {
       Develop here
       <RadioButton />
       <PenButton />
-      <Button variant='penButton' size='icon'>
+      <Button variant="penButton" size="icon">
         <Pen />
       </Button>
       <Button variant={'default'} loading={true} size="lg">
