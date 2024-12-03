@@ -1,12 +1,13 @@
 import * as React from 'react'
 import { Slot } from '@radix-ui/react-slot'
 import { cva, type VariantProps } from 'class-variance-authority'
+import SvgSpinners3DotsFade from '~icons/svg-spinners/3-dots-fade.jsx'
 
 import { cn } from '@/lib/utils'
 
 const buttonVariants = cva(
   [
-    'group relative flex h-14 w-auto items-center justify-center !rounded-100 bg-primary text-primary-foreground',
+    'group relative flex gap-2 w-auto items-center justify-center',
   ],
   {
     variants: {
@@ -22,18 +23,24 @@ const buttonVariants = cva(
           'disabled:text-textBody-100 disabled:ring-border-300',
         ],
         ghost: ['bg-white text-primary', 'focus:bg-background-100', 'disabled:text-textBody-100'],
+        textButton: ['text-primary focus:text-primary-300']
       },
       size: {
-        sm: 'h-10 rounded-md px-3 text-xs typo-mob-button-sm',
+        sm: 'h-10 rounded-md px-3 typo-mob-button-sm',
         // add typography
         lg: 'h-14 rounded-md px-8',
         md: 'h-12 rounded-md px-8 typo-mob-button-md',
-        icon: 'h-9 w-9',
+        icon: 'size-8',
       },
+      rounded: {
+        default: "!rounded-100",
+        icon: "rounded-full"
+      }
     },
     defaultVariants: {
       variant: 'default',
       size: 'lg',
+      rounded: 'default'
     },
   }
 )
@@ -46,7 +53,7 @@ export interface ButtonProps
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ children, className, loading, variant, size, asChild = false, ...props }, ref) => {
+  ({ children, className, loading, variant, size, rounded, asChild = false, ...props }, ref) => {
     const Comp = asChild ? Slot : 'button'
     return (
       <Comp
@@ -54,7 +61,8 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           buttonVariants({
             variant,
             size,
-            className: cn({ 'loading [&>*]:invisible': loading }, className),
+            rounded,
+            className: cn({ 'loading [&>*]:invisible pointer-events-none': loading }, className),
           })
         )}
         ref={ref}
@@ -62,7 +70,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       >
         <div className="contents">{children}</div>
         <div className="invisible absolute inset-0 flex items-center justify-center group-[.loading]:!visible">
-          Loading
+          <SvgSpinners3DotsFade />
         </div>
       </Comp>
     )

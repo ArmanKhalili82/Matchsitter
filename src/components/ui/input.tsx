@@ -1,10 +1,11 @@
-"use client"
+'use client'
 
 import { cva, type VariantProps } from 'class-variance-authority'
 import React, { type ReactElement, useId, useState } from 'react'
 import { cn } from '@/lib/utils'
-import Eye from '~icons/tabler/eye'
-import EyeOff from '~icons/tabler/eye-off'
+import {Eye, EyeOff} from "lucide-react"
+// import Eye from '~icons/tabler/eye'
+// import EyeOff from '~icons/tabler/eye-off'
 
 const inputContainer = cva(
   [
@@ -150,17 +151,6 @@ export default function Input({
     </div>
   )
 }
-
-
-
-
-
-
-
-
-
-
-
 
 // import * as React from "react"
 

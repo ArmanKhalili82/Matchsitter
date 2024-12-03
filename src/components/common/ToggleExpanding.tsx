@@ -38,7 +38,12 @@ const ToggleExpanding = () => {
         )}
       </div>
 
-      <Button onClick={toggleExpand} variant="ghost" size="sm" className="mt-2 w-full typo-mob-button-sm">
+      <Button
+        onClick={toggleExpand}
+        variant="ghost"
+        size="sm"
+        className="mt-2 w-full typo-mob-button-sm"
+      >
         {/* {isExpanded ? "Show Less ${LogOut}" : "Show More"} */}
         {isExpanded ? (
           <>

@@ -125,6 +125,15 @@ const config = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        surface: {
+          100: 'hsl(var(--surface))'
+        },
+        icons: {
+          500: 'hsl(var(--i-500))',
+          600: 'hsl(var(--i-600))',
+          700: 'hsl(var(--i-700))',
+          800: 'hsl(var(--i-800))',
+        },
         border: {
           100: 'hsl(var(--border-100))',
           200: 'hsl(var(--border-200))',
