@@ -5,45 +5,41 @@ import SvgSpinners3DotsFade from '~icons/svg-spinners/3-dots-fade.jsx'
 
 import { cn } from '@/lib/utils'
 
-const buttonVariants = cva(
-  [
-    'group relative flex gap-2 w-auto items-center justify-center',
-  ],
-  {
-    variants: {
-      variant: {
-        default: [
-          'bg-primary text-textBody-50',
-          'focus:bg-primary-300',
-          'disabled:bg-background-200 disabled:text-textBody-100',
-        ],
-        outline: [
-          'bg-white text-primary ring-1 focus:ring-primary',
-          'focus:bg-background-100',
-          'disabled:text-textBody-100 disabled:ring-border-300',
-        ],
-        ghost: ['bg-white text-primary', 'focus:bg-background-100', 'disabled:text-textBody-100'],
-        textButton: ['text-primary focus:text-primary-300']
-      },
-      size: {
-        sm: 'h-10 rounded-md px-3 typo-mob-button-sm',
-        // add typography
-        lg: 'h-14 rounded-md px-8',
-        md: 'h-12 rounded-md px-8 typo-mob-button-md',
-        icon: 'size-8',
-      },
-      rounded: {
-        default: "!rounded-100",
-        icon: "rounded-full"
-      }
+const buttonVariants = cva(['group relative flex w-auto items-center justify-center gap-2'], {
+  variants: {
+    variant: {
+      default: [
+        'bg-primary text-textBody-50',
+        'focus:bg-primary-300',
+        'disabled:bg-background-200 disabled:text-textBody-100',
+      ],
+      outline: [
+        'bg-white text-primary ring-1 focus:ring-primary',
+        'focus:bg-background-100',
+        'disabled:text-textBody-100 disabled:ring-border-300',
+      ],
+      ghost: ['bg-white text-primary', 'focus:bg-background-100', 'disabled:text-textBody-100'],
+      textButton: ['text-primary focus:text-primary-300'],
+      penButton: ['bg-white text-icons-700 p-1 ring-1 ring-border-200 focus:bg-background-50']
     },
-    defaultVariants: {
-      variant: 'default',
-      size: 'lg',
-      rounded: 'default'
+    size: {
+      sm: 'h-10 rounded-md px-3 typo-mob-button-sm',
+      // add typography
+      lg: 'h-14 rounded-md px-8',
+      md: 'h-12 rounded-md px-8 typo-mob-button-md',
+      icon: 'size-8',
     },
-  }
-)
+    rounded: {
+      default: '!rounded-100',
+      icon: 'rounded-full',
+    },
+  },
+  defaultVariants: {
+    variant: 'default',
+    size: 'lg',
+    rounded: 'default',
+  },
+})
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
@@ -62,7 +58,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             variant,
             size,
             rounded,
-            className: cn({ 'loading [&>*]:invisible pointer-events-none': loading }, className),
+            className: cn({ 'loading pointer-events-none [&>*]:invisible': loading }, className),
           })
         )}
         ref={ref}

@@ -3,7 +3,7 @@ import ToggleExpanding from '@/components/common/ToggleExpanding'
 import { Button } from '@/components/ui/button'
 import Input from '@/components/ui/input'
 import React from 'react'
-import { EarIcon, Fan, Play, ChevronLeft, ChevronRight, Pen } from "lucide-react"
+import { EarIcon, Fan, Play, ChevronLeft, ChevronRight, Pen } from 'lucide-react'
 import { Checkbox } from '@/components/ui/checkbox'
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
 import { Label } from '@/components/ui/label'
@@ -17,19 +17,22 @@ const Page = () => {
       Develop here
       <RadioButton />
       <PenButton />
+      <Button variant='penButton' size='icon'>
+        <Pen />
+      </Button>
       <Button variant={'default'} loading={true} size="lg">
         default
       </Button>
-      <Button variant='default' size='icon' rounded='icon'>
+      <Button variant="default" size="icon" rounded="icon">
         <Play />
       </Button>
-      <Button variant={'outline'} size="icon" rounded='icon'>
-         <EarIcon />
+      <Button variant={'outline'} size="icon" rounded="icon">
+        <EarIcon />
       </Button>
       <Button variant={'ghost'} size="sm">
         ghost
       </Button>
-      <Button variant='textButton' size='lg'>
+      <Button variant="textButton" size="lg">
         <ChevronLeft /> Button Text <ChevronRight />
       </Button>
       <Button>
@@ -49,7 +52,12 @@ const Page = () => {
         </div>
       </RadioGroup>
       <Switch />
-      <Input color='success' suffixIcon={<div>Hello</div>} prefixIcon={<div>Good</div>} type="password" />
+      <Input
+        color="success"
+        suffixIcon={<div>Hello</div>}
+        prefixIcon={<div>Good</div>}
+        type="password"
+      />
     </div>
   )
 }

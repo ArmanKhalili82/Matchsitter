@@ -126,7 +126,7 @@ const config = {
           foreground: 'hsl(var(--card-foreground))',
         },
         surface: {
-          100: 'hsl(var(--surface))'
+          100: 'hsl(var(--surface))',
         },
         icons: {
           500: 'hsl(var(--i-500))',
