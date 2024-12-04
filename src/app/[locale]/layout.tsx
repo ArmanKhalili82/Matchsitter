@@ -53,7 +53,12 @@ export default async function MainLayout({ children, params }: MainLayoutProps) 
         <Analytics />
         <NextIntlProvider>
           <ToasterComponent />
-          <ReactQueryProvider>{children}</ReactQueryProvider>
+          <ReactQueryProvider>
+            {/* <div className='flex flex-col min-h-screen items-center'>
+              <div className='h-7 w-[130px] bg-primary mt-6'></div> */}
+              {children}
+            {/* </div> */}
+          </ReactQueryProvider>
         </NextIntlProvider>
       </body>
     </html>
