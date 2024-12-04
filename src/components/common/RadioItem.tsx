@@ -1,12 +1,12 @@
-"use client";
-import React from "react";
-import { RadioGroupItem } from "../ui/radio-group";
-import { Label } from "../ui/label";
+'use client'
+import React from 'react'
+import { RadioGroupItem } from '../ui/radio-group'
+import { Label } from '../ui/label'
 
 interface RadioOptionProps {
-  id: string;
-  value: string;
-  label: string;
+  id: string
+  value: string
+  label: string
 }
 
 const RadioOption: React.FC<RadioOptionProps> = ({ id, value, label }) => {
@@ -16,7 +16,7 @@ const RadioOption: React.FC<RadioOptionProps> = ({ id, value, label }) => {
       onBlur={(e) => {
         // Ensure focus returns if the user clicks outside
         if (e.relatedTarget === null) {
-          e.target.focus();
+          e.target.focus()
         }
       }}
     >
@@ -29,7 +29,7 @@ const RadioOption: React.FC<RadioOptionProps> = ({ id, value, label }) => {
         {label}
       </Label>
     </div>
-  );
-};
+  )
+}
 
-export default RadioOption;
+export default RadioOption

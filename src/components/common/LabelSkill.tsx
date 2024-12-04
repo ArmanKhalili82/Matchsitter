@@ -10,7 +10,7 @@ const LabelSkill = () => {
         </div>
         Childcare Expertise
       </button> */}
-      <button className="flex h-8 w-auto px-2 items-center justify-center gap-2 rounded-full bg-background-200 text-textBody-300 typo-mob-caption">
+      <button className="flex h-8 w-auto items-center justify-center gap-2 rounded-full bg-background-200 px-2 text-textBody-300 typo-mob-caption">
         <div className="flex size-6 items-center justify-center rounded-full bg-background-100">
           <X className="size-4 text-icons-700" />
         </div>
@@ -27,7 +27,6 @@ const LabelSkill = () => {
 }
 
 export default LabelSkill
-
 
 //change heart sizes inprogress
 //rounded-full inprogress

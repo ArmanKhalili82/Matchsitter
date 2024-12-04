@@ -1,11 +1,11 @@
-import { Heart } from 'lucide-react';
-import React from 'react';
+import { Heart } from 'lucide-react'
+import React from 'react'
 
-const HeartButton = ({ action }: { action: "active" | "inactive" }) => {
+const HeartButton = ({ action }: { action: 'active' | 'inactive' }) => {
   return (
     <div>
       <button className="flex items-center justify-center">
-        {action === "active" ? (
+        {action === 'active' ? (
           // Active Button
           <Heart className="h-[18px] w-auto fill-secondary text-secondary" />
         ) : (
@@ -14,19 +14,10 @@ const HeartButton = ({ action }: { action: "active" | "inactive" }) => {
         )}
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default HeartButton;
-
-
-
-
-
-
-
-
-
+export default HeartButton
 
 // import { Heart } from 'lucide-react'
 // import React from 'react'

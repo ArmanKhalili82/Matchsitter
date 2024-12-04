@@ -13,7 +13,7 @@ const ToggleExpanding = () => {
       <div className="mb-3 flex justify-between gap-4">
         <div className="flex gap-1">
           <h2 className="text-textBody-300 typo-mob-title-md">Sara Bing</h2>
-          <div className="flex h-5 w-7 rounded-50 bg-success justify-center items-center text-white typo-mob-title-sm">
+          <div className="flex h-5 w-7 items-center justify-center rounded-50 bg-success text-white typo-mob-title-sm">
             5.0
           </div>
         </div>

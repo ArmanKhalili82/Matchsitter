@@ -1,7 +1,7 @@
-"use client";
-import React from "react";
-import { RadioGroup } from "../ui/radio-group";
-import RadioItem from './RadioItem';
+'use client'
+import React from 'react'
+import { RadioGroup } from '../ui/radio-group'
+import RadioItem from './RadioItem'
 
 const RadioButtonGroup = () => {
   return (
@@ -11,29 +11,10 @@ const RadioButtonGroup = () => {
         <RadioItem id="r2" value="No" label="No" />
       </RadioGroup>
     </div>
-  );
-};
+  )
+}
 
-export default RadioButtonGroup;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export default RadioButtonGroup
 
 // "use client"
 // import React from 'react'
@@ -44,7 +25,7 @@ export default RadioButtonGroup;
 //   return (
 //     <div>
 //       <RadioGroup>
-//         <div 
+//         <div
 //           className="flex h-[42px] w-auto items-center gap-2 !rounded-100 bg-surface-100 p-2 text-textBody-300 ring-1 ring-border-200 focus-within:ring-primary"
 //           onBlur={e => {
 //             // only re-focus if the user clicked on something
@@ -63,7 +44,7 @@ export default RadioButtonGroup;
 //             Yes
 //           </Label>
 //         </div>
-//         <div 
+//         <div
 //           className="flex h-[42px] w-auto items-center gap-2 !rounded-100 bg-surface-100 p-2 text-textBody-300 ring-1 ring-border-200 focus-within:ring-primary"
 //           onBlur={e => {
 //             // only re-focus if the user clicked on something

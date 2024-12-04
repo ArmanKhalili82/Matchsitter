@@ -25,12 +25,12 @@ const Page = () => {
       <BabysitterCard />
       <SpinnerButton />
       <Menu />
-      <HeartButton action='active' />
-      <HeartButton action='inactive' />
-      <div className='flex flex-col ring-2 ring-orange-300'>
-        <PendingButton variant='completed' label='completed' />
-        <PendingButton variant='reserved' label='reserved' />
-        <PendingButton variant='canceled' label='canceled' />
+      <HeartButton action="active" />
+      <HeartButton action="inactive" />
+      <div className="flex flex-col ring-2 ring-orange-300">
+        <PendingButton variant="completed" label="completed" />
+        <PendingButton variant="reserved" label="reserved" />
+        <PendingButton variant="canceled" label="canceled" />
       </div>
       <LabelSkill />
       <PriceButton />
