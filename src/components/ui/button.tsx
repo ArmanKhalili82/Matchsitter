@@ -24,8 +24,7 @@ const buttonVariants = cva(['group relative flex w-auto items-center justify-cen
     },
     size: {
       sm: 'h-10 rounded-md px-3 typo-mob-button-sm',
-      // add typography
-      lg: 'h-14 rounded-md px-8',
+      lg: 'h-14 rounded-md px-8 typo-mob-button-lg',
       md: 'h-12 rounded-md px-8 typo-mob-button-md',
       icon: 'size-8',
     },

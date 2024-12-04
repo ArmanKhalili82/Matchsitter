@@ -13,7 +13,7 @@ const ToggleExpanding = () => {
       <div className="mb-3 flex justify-between gap-4">
         <div className="flex gap-1">
           <h2 className="text-textBody-300 typo-mob-title-md">Sara Bing</h2>
-          <div className="h-5 w-7 gap-3 rounded-50 bg-success px-1 py-1 text-white typo-mob-title-sm">
+          <div className="flex h-5 w-7 rounded-50 bg-success justify-center items-center text-white typo-mob-title-sm">
             5.0
           </div>
         </div>
@@ -34,7 +34,7 @@ const ToggleExpanding = () => {
         </p>
 
         {!isExpanded && (
-          <div className="pointer-events-none absolute bottom-0 left-0 h-16 w-full bg-gradient-to-t from-white to-transparent" />
+          <div className="pointer-events-none absolute bottom-0 left-0 h-6 w-full bg-gradient-to-t from-white to-transparent" />
         )}
       </div>
 

@@ -13,21 +13,28 @@ import PenButton from '@/components/common/PenButton'
 import PriceButton from '@/components/common/PriceButton'
 import LabelSkill from '@/components/common/LabelSkill'
 import Menu from '@/components/common/Menu'
-import PendingButtons from '@/components/common/PendingButtons'
 import HeartButton from '@/components/common/HeartButton'
 import SpinnerButton from '@/components/common/SpinnerButton'
+import PendingButton from '@/components/common/PendingButtons'
+import BabysitterCard from '@/components/common/BabysitterCard'
 
 const Page = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center gap-3 bg-gray-200">
       Develop here
+      <BabysitterCard />
       <SpinnerButton />
       <Menu />
-      <HeartButton />
-      <PendingButtons />
+      <HeartButton action='active' />
+      <HeartButton action='inactive' />
+      <div className='flex flex-col ring-2 ring-orange-300'>
+        <PendingButton variant='completed' label='completed' />
+        <PendingButton variant='reserved' label='reserved' />
+        <PendingButton variant='canceled' label='canceled' />
+      </div>
       <LabelSkill />
       <PriceButton />
-      {/* <RadioButton />
+      <RadioButton />
       <PenButton />
       <Button variant="penButton" size="icon">
         <Pen />
@@ -50,7 +57,7 @@ const Page = () => {
       <Button>
         <Pen />
       </Button>
-      <Checkbox /> */}
+      <Checkbox />
       <Toggle />
       <ToggleExpanding />
       <RadioGroup>

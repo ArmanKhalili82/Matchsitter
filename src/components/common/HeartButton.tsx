@@ -1,17 +1,47 @@
-import { Heart } from 'lucide-react'
-import React from 'react'
+import { Heart } from 'lucide-react';
+import React from 'react';
 
-const HeartButton = () => {
+const HeartButton = ({ action }: { action: "active" | "inactive" }) => {
   return (
     <div>
-      <button>
-        <Heart className='text-secondary size-5' />
-      </button>
-      <button>
-        <Heart className='size-5 fill-secondary text-secondary' />
+      <button className="flex items-center justify-center">
+        {action === "active" ? (
+          // Active Button
+          <Heart className="h-[18px] w-auto fill-secondary text-secondary" />
+        ) : (
+          // Inactive Button
+          <Heart className="h-[18px] w-auto text-secondary" />
+        )}
       </button>
     </div>
-  )
-}
+  );
+};
 
-export default HeartButton
+export default HeartButton;
+
+
+
+
+
+
+
+
+
+
+// import { Heart } from 'lucide-react'
+// import React from 'react'
+
+// const HeartButton = () => {
+//   return (
+//     <div>
+//       <button>
+//         <Heart className="h-[18px] w-auto text-secondary" />
+//       </button>
+//       <button>
+//         <Heart className="h-[18px] w-auto fill-secondary text-secondary" />
+//       </button>
+//     </div>
+//   )
+// }
+
+// export default HeartButton
