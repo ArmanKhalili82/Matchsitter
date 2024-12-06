@@ -56,7 +56,7 @@ export default async function MainLayout({ children, params }: MainLayoutProps) 
           <ReactQueryProvider>
             {/* <div className='flex flex-col min-h-screen items-center'>
               <div className='h-7 w-[130px] bg-primary mt-6'></div> */}
-              {children}
+            {children}
             {/* </div> */}
           </ReactQueryProvider>
         </NextIntlProvider>

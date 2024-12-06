@@ -6,7 +6,7 @@ import { Button } from '../ui/button'
 
 const BabysitterCard = () => {
   return (
-    <div className='flex flex-col gap-2'>
+    <div className="flex flex-col gap-2">
       <div className="flex h-auto max-w-96 flex-col gap-4 !rounded-100 bg-background-50 p-3">
         <div className="flex h-14 justify-between">
           <div className="flex h-14 gap-2">
@@ -68,7 +68,10 @@ const BabysitterCard = () => {
             <div className="h-14 w-14 !rounded-100 bg-background-400"></div>
             <div className="h-[47px]">
               <p className="pb-2 text-textBody-300 typo-mob-title-md">Alice Smith</p>
-              <p className="flex text-textBody-200 typo-mob-body-sm justify-center items-center gap-2"> <Verified className='size-3 text-success' />  Certified Babysitter</p>
+              <p className="flex items-center justify-center gap-2 text-textBody-200 typo-mob-body-sm">
+                {' '}
+                <Verified className="size-3 text-success" /> Certified Babysitter
+              </p>
             </div>
           </div>
           <div>
@@ -123,7 +126,10 @@ const BabysitterCard = () => {
             <div className="h-14 w-14 !rounded-100 bg-background-400"></div>
             <div className="h-[47px]">
               <p className="pb-2 text-textBody-300 typo-mob-title-md">Alice Smith</p>
-              <p className="flex text-textBody-200 typo-mob-body-sm justify-center items-center gap-2"> <Verified className='size-3 text-success' />  Certified Babysitter</p>
+              <p className="flex items-center justify-center gap-2 text-textBody-200 typo-mob-body-sm">
+                {' '}
+                <Verified className="size-3 text-success" /> Certified Babysitter
+              </p>
             </div>
           </div>
           <div>

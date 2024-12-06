@@ -21,20 +21,25 @@ import { Link, type PathnamesType } from '@/i18n/routing'
 
 const Page = () => {
   return (
-    <div className='flex flex-col min-h-screen items-center'>
-      <div className='h-7 w-[130px] bg-primary mt-6'></div>
-      <p className='text-textBody-400 typo-desk-title-md mt-[267px]'>
-        Choose your role
-      </p>
-      <Button className='w-[328px] mt-[23px]' size='md'>
-        <Link href={"/authorization/signin?as=parent" as PathnamesType}>Parent</Link> 
+    <div className="flex min-h-screen flex-col items-center">
+      <div className="mt-6 h-7 w-[130px] bg-primary"></div>
+      <p className="mt-[267px] text-textBody-400 typo-desk-title-md">Choose your role</p>
+      <Link href={'/authorization/signin?as=parent' as PathnamesType}>
+        <Button size='md' className="mt-[23px] w-[328px]">
+          Parent
+        </Button>
+      </Link>
+      {/* <Button className="mt-[23px] w-[328px]" size="md">
+        <Link href={'/authorization/signin?as=parent' as PathnamesType}>Parent</Link> */}
         {/* get search params in next pages */}
-      </Button>
+      {/* </Button> */}
       {/* <Button className='w-[328px] mt-[15px]' variant={'outline'} size='md'>
         <Link href="/authorization/babysitter/signin">Babysitter</Link>
       </Button> */}
-      <Link href="/authorization/babysitter/signin" className='w-[328px] mt-[23px]'>
-        <Button variant={'outline'} size='md'>Babysitter</Button>
+      <Link href={"/authorization/signin?as=babysitter" as PathnamesType}>
+        <Button variant={'outline'} size="md" className="mt-[23px] w-[328px]">
+          Babysitter
+        </Button>
       </Link>
     </div>
     // <div className="flex min-h-screen flex-col items-center justify-center gap-3 bg-gray-200">
