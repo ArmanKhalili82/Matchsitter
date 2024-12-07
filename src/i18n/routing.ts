@@ -6,7 +6,8 @@ export const routing = defineRouting({
   defaultLocale: 'en',
   pathnames: {
     '/': '/',
-    '/authorization/babysitter/signin': '/authorization/babysitter/signin',
+    '/authorization/signin': '/authorization/signin',
+    '/authorization/signup': '/authorization/signup',
     '/dashboard/tax-and-report': '/dashboard/tax-and-report',
     '/dashboard/tax-and-report/overview': '/dashboard/tax-and-report/overview',
     '/dashboard/tax-and-report/financial': '/dashboard/tax-and-report/financial',

@@ -1,6 +1,6 @@
 'use client'
 
-import { SubmitButton } from '@/components/common/SubmitButton' 
+import { SubmitButton } from '@/components/common/SubmitButton'
 import {
   Form,
   FormControl,
@@ -20,7 +20,7 @@ import { Input } from '@/components/form/elements'
 import type { SignInFormProps } from '@/lib/typescript/interfaces/forms.type'
 import { useMutation } from '@tanstack/react-query'
 import { toast } from 'sonner'
-import { useUserStore } from '@/lib/store/useUserStore' 
+import { useUserStore } from '@/lib/store/useUserStore'
 
 export default function SignInComponent() {
   const t = useTranslations('SignIn')
@@ -55,6 +55,7 @@ export default function SignInComponent() {
             if (result!.data.profile) {
               console.log(result!.data.profile)
               setProfile(result!.data.profile)
+              //need to change to dashboard
               router.push('/dashboard/business-profile')
             } else {
               router.push('/complete-registration')
@@ -67,7 +68,10 @@ export default function SignInComponent() {
 
   return (
     <Form {...form}>
-      <form className="flex h-full w-full flex-col sm:h-fit p-4" onSubmit={form.handleSubmit(onSubmit)}>
+      <form
+        className="flex h-full w-full flex-col p-4 sm:h-fit"
+        onSubmit={form.handleSubmit(onSubmit)}
+      >
         <FormField
           control={form.control}
           name="email"
@@ -110,11 +114,9 @@ export default function SignInComponent() {
         <div className="mt-auto flex w-full flex-col gap-4 pt-10">
           <SubmitButton clientPending={isPending}>{t('signin')}</SubmitButton>
 
-          <p
-            className="flex items-center justify-center gap-1"
-          >
+          <p className="flex items-center justify-center gap-1">
             {t('message')}
-            <Link role="button" className="text-button-lg-ds text-secondary" href="/signup">
+            <Link role="button" className="text-button-lg-ds text-secondary" href="/authorization/signup">
               {t('signup')}
             </Link>
           </p>

@@ -25,18 +25,18 @@ const Page = () => {
       <div className="mt-6 h-7 w-[130px] bg-primary"></div>
       <p className="mt-[267px] text-textBody-400 typo-desk-title-md">Choose your role</p>
       <Link href={'/authorization/signin?as=parent' as PathnamesType}>
-        <Button size='md' className="mt-[23px] w-[328px]">
+        <Button size="md" className="mt-[23px] w-[328px]">
           Parent
         </Button>
       </Link>
       {/* <Button className="mt-[23px] w-[328px]" size="md">
         <Link href={'/authorization/signin?as=parent' as PathnamesType}>Parent</Link> */}
-        {/* get search params in next pages */}
+      {/* get search params in next pages */}
       {/* </Button> */}
       {/* <Button className='w-[328px] mt-[15px]' variant={'outline'} size='md'>
         <Link href="/authorization/babysitter/signin">Babysitter</Link>
       </Button> */}
-      <Link href={"/authorization/signin?as=babysitter" as PathnamesType}>
+      <Link href={'/authorization/signin?as=babysitter' as PathnamesType}>
         <Button variant={'outline'} size="md" className="mt-[23px] w-[328px]">
           Babysitter
         </Button>
